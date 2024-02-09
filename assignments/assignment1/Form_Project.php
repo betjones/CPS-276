@@ -52,9 +52,8 @@
         <label for="email" class="form-label">Email</label>
         <input type="text" class="form-control" id="email">
       </div>
-      <legend class="col-md-12">Preferred method of contact</legend>
       <div class="col-md-12">
-        <div class="form-check form-check-inline">
+        <div class="form-check form-check-inline">Preferred method of contact</label>
           <input class="form-check-input" type="radio" name="emailbtn" id="emailbtn">
           <label class="form-check-label" for="flexRadioDefault1">
             Email
