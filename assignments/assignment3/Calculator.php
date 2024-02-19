@@ -1,8 +1,9 @@
 <?php
 class Calculator {
     public function calc($operator, $num1 = null, $num2 = null) {
+
         if ($num1 === null || $num2 === null || !is_numeric($num1) || !is_numeric($num2)) {
-            return "\nCannot perform operation. You must have three arguments. A string for the operator (+,-,*,/) and two integers or floats for the numbers.";
+            return "<p>Cannot perform operation. You must have three arguments. A string for the operator (+,-,*,/) and two integers or floats for the numbers.</p>";
         }
 
         switch ($operator) {
