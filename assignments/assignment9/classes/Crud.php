@@ -2,27 +2,25 @@
 
 class Crud{
 
-    public function init(){
-        if(count($_POST) > 0){
-            if(isset($_POST['addNote'])){
-                return $this->addNote();
-            }
-            else if(isset($_POST['update'])){
-                return $this->updateNotes($_POST);
-            }
-            else {
-                return "";
-            }
-        }
-    }
+    // public function init(){
+    //     if(count($_POST) > 0){
+    //         if(isset($_POST['addNote'])){
+    //             return $this->addNote();
+    //         }
+    //         else if(isset($_POST['update'])){
+    //             return $this->updateNotes($_POST);
+    //         }
+    //         else {
+    //             return "";
+    //         }
+    //     }
+    // }
 
     public function getNotes(){
         $pdo = new PdoMethods();
-        $sql = "SELECT * FROM notes";
-        $records = $pdo->selectNotBinded($sql);
-        if($records == 'error'){
-			return 'There has been and error processing your request';
-		}
+        $sql = "SELECT * FROM notes"; // Change table name to 'notes'
+        $records = $pdo->selectNotBinded($sql); // Assuming you have a method named 'selectNotBinded' for fetching records
+        return $records;
     }
 
     private function addNote(){
