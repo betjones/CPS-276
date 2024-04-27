@@ -2,20 +2,7 @@
 
 class Crud{
 
-    // public function init(){
-    //     if(count($_POST) > 0){
-    //         if(isset($_POST['addNote'])){
-    //             return $this->addNote();
-    //         }
-    //         else if(isset($_POST['update'])){
-    //             return $this->updateNotes($_POST);
-    //         }
-    //         else {
-    //             return "";
-    //         }
-    //     }
-    // }
-
+   
     public function getNotes(){
         $pdo = new PdoMethods();
         $sql = "SELECT * FROM notes"; // Change table name to 'notes'

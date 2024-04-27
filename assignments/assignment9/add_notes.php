@@ -1,7 +1,6 @@
 <?php
 require_once 'classes/Crud.php';
 $crud = new Crud();
-$output = $crud->init();
 
 ?>
 <!DOCTYPE html>
